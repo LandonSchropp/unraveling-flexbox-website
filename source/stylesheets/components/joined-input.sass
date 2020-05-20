@@ -1,0 +1,20 @@
+.joined-input
+  @include skinny
+
+  @include desktop
+    $_margin: calc(#{ 100% / 4 } + #{ $spacing / 2 })
+    margin-left: $_margin
+    margin-right: $_margin
+
+  display: flex
+
+  input
+    flex: 1
+
+    vertical-align: top
+    border-top-right-radius: 0
+    border-bottom-right-radius: 0
+
+  button
+    border-top-left-radius: 0
+    border-bottom-left-radius: 0

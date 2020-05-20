@@ -1,0 +1,19 @@
+.credit-card-number-container
+  position: relative
+
+  input
+    margin-top: 0
+
+  @each $credit-card in (visa mastercard amex dinersclub discover jcb maestro)
+    input.#{ $credit-card } + .credit-card-icon
+      display: block
+      width: $spacing / 0.65
+      position: absolute
+      top: 0
+      right: $spacing / 4
+      bottom: 0
+
+      background-image: image-url("credit_card_icons/#{ $credit-card }.png")
+      background-size: 100%
+      background-position: 50%
+      background-repeat: no-repeat

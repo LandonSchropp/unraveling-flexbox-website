@@ -1,0 +1,54 @@
+// TODO: Clean up these styles and remove redundency.
+#menu nav
+  margin: 0
+  padding: 0
+
+  font-size: 0.7rem
+  font-weight: 400
+
+  +mobile-only
+    a
+      text-align: center
+
+    & > a:first-of-type
+      position: fixed
+      top: 0
+      left: 0
+      right: 0
+      z-index: 300
+
+      background-color: white
+      border-bottom: 1px solid $gull-gray
+
+  +tablet
+    font-size: 0.7rem
+    padding: 0 calc(50% - #{ $desktop-width / 2 })
+
+    &, .menu-navigation
+      display: flex
+      align-items: baseline
+
+  +desktop
+    font-size: 0.7rem
+
+  a
+    display: block
+    padding:  0 $spacing / 2
+    line-height: $spacing * 2
+
+    img
+      width: 1.5em
+      height: 1.5em
+      display: inline-block
+      vertical-align: -0.35em
+      margin-right: $spacing / 4
+
+    @include mobile-only
+      text-decoration: underline
+
+  & > a:first-of-type
+    flex: 1
+
+  .button
+    font-size: inherit
+    padding: $spacing / 8 $spacing / 2

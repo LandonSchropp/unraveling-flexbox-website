@@ -1,0 +1,10 @@
+@mixin skinny
+
+  @include tablet
+    $_margin: calc(#{ 100% / 6 } + #{ $spacing / 2 })
+    margin-left: $_margin
+    margin-right: $_margin
+
+@mixin skinny-children
+  & > *
+    @include skinny

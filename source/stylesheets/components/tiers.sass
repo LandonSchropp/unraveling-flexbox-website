@@ -1,0 +1,60 @@
+.tiers
+  padding: 0
+
+  @include tablet
+    display: flex
+    margin-left: 0
+    margin-right: 0
+
+.tier
+  +card
+
+  display: flex
+  flex-direction: column
+  flex: 1
+  padding: 0 $spacing / 2
+
+  @include mobile-only
+    &:not(:last-of-type)
+      margin-bottom: $spacing
+
+  @include tablet
+    &:first-of-type
+      border-top-right-radius: 0
+      border-bottom-right-radius: 0
+      border-right-width: 0
+
+    &:last-of-type
+      border-top-left-radius: 0
+      border-bottom-left-radius: 0
+      border-left-width: 0
+
+    &:first-of-type, &:last-of-type
+      margin-top: $spacing
+      margin-bottom: $spacing
+
+  h3
+    text-align: center
+    font-weight: 600
+    margin-bottom: $spacing / 2
+
+  p
+    font-style: italic
+    text-align: center
+    margin-top: 0
+    margin-bottom: 0
+    flex: 1
+
+    @include tablet
+      font-size: 1rem * 5/6
+      line-height: 1.4
+
+    // BUG FIX: This is a bug fix for IE11.
+    -ms-flex-preferred-size: auto
+
+  .actions
+    margin-bottom: 0
+
+  .paypal
+    margin-top: $spacing / 2
+    margin-bottom: $spacing

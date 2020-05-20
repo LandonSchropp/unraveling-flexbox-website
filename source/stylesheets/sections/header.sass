@@ -1,0 +1,29 @@
+#header
+  position: relative
+
+  @include tablet
+    display: flex
+    align-items: center
+    justify-content: center
+
+    @media (max-height: $desktop-width)
+      min-height: calc(95vh - #{ $spacing * 2 })
+
+  figure
+    max-width: 60vw
+    margin: $spacing auto
+
+    @include tablet
+      flex: 1
+      max-width: auto
+      margin-left: $spacing / 2
+      margin-right: $spacing / 2
+
+    // BUG FIX: This is necessary for FireFox to display the image correctly.
+    img
+      width: 100%
+
+  .description
+    margin-left: $spacing / 2
+    margin-right: $spacing / 2
+    flex: 2

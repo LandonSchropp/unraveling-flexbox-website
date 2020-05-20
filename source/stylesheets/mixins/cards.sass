@@ -1,0 +1,30 @@
+@mixin card
+  border: 1px solid $gull-gray
+  border-radius: $spacing / 4
+  box-shadow: 0 0 $spacing * 2 transparentize($gull-gray, 0.85)
+  background-color: $white
+
+@mixin arrow
+  $arrow-height: $spacing / 2
+  $arrow-width: $spacing * 0.75
+
+  position: relative
+
+  &::after, &::before
+    content: ""
+
+    display: block
+
+    border-top: $arrow-height solid white
+    border-left: $arrow-width / 2 solid transparent
+    border-right: $arrow-width / 2 solid transparent
+    width: 0
+    height: 0
+
+    position: absolute
+    bottom: -$spacing / 2
+    left: $spacing / 2
+
+  &::before
+    border-top-color: $gull-gray
+    bottom: calc(#{-$spacing / 2} - 1px)

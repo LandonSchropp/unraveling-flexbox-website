@@ -1,0 +1,19 @@
+.layouts
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+
+  margin-top: $spacing * 2
+  margin-left: 0
+  margin-right: 0
+
+  .layout
+    margin: 0 0 $spacing
+    padding: 0 $spacing / 2
+    flex: 0 0 50%
+
+    @include tablet
+      flex: 0 0 (100% / 3)
+
+  img
+    margin: 0 auto

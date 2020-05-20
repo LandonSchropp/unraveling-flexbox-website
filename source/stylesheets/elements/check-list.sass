@@ -1,0 +1,18 @@
+.check-list li
+  position: relative
+  padding-left: $spacing * 1.375
+  margin-bottom: $spacing / 2
+
+  &::before
+    content: ""
+
+    display: block
+    position: absolute
+    top: $spacing * 0.0625
+    left: 0
+    width: $spacing * 0.875
+    height: $spacing * 0.875
+
+    border-radius: $spacing / 2
+    background-image: image-url("icons/check.svg")
+    background-size: 100%

@@ -1,0 +1,37 @@
+// TODO: Clean up these styles and remove redundency.
+#menu
+  $menu-transition-time: 0.15s
+  $full-menu-height: $spacing * 10
+  $menu-translation: $spacing * 8
+
+  color: $fjord
+
+  padding: 0
+
+  +tablet
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    z-index: 200
+
+    background-color: transparentize($white, 0.05)
+    border-bottom: 1px solid $gull-gray
+
+  +mobile-only
+    .menu-navigation
+      position: fixed
+      top: $spacing * 2
+      top: calc(#{$spacing * 2} - 1px)
+      right: 0
+      bottom: 0
+      left: 0
+      z-index: 500
+
+      background-color: white
+      transition: opacity $menu-transition-time linear
+
+    &:not(.open) .menu-navigation
+      visibility: hidden
+      opacity: 0
+      transition: opacity $menu-transition-time linear, visibility 0s $menu-transition-time

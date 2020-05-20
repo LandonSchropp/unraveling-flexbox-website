@@ -1,0 +1,20 @@
+@keyframes bounce-arrow
+  from
+    transform: translate3d(0, 0, 0)
+  to
+    // BUG FIX: IE10 doesn't handle animations without pixel values very well
+    transform: translate3d(0, 6px, 0)
+
+.down-arrow
+  position: absolute
+  bottom: $spacing
+  left: calc(50% - #{ $spacing * 0.6 })
+  width: $spacing * 1.2
+  height: $spacing * 0.8
+  margin: 0 auto
+
+  opacity: 0.8
+  animation: bounce-arrow 0.6s ease-in-out infinite alternate
+
+  @include mobile-only
+    display: none

@@ -1,0 +1,33 @@
+blockquote
+  margin: 0
+
+  // Add some space at the top to compensate for the citation at the bottom
+  margin-top: $spacing * 2
+
+  cite
+    line-height: $spacing
+    padding: $spacing / 2 0
+
+  p
+    position: relative
+    margin: 0
+
+    font-size: 0.9rem
+    font-style: italic
+    quotes: '“' '”'
+
+    &::before, &::after
+      font-size: 2em
+      vertical-align: super
+      color: transparentize($gull-gray, 0.1)
+
+    &::before
+      content: open-quote
+      position: absolute
+      top: 0.2em
+      left: -0.5em
+
+    &::after
+      content: close-quote
+      line-height: 0
+      vertical-align: -0.25em

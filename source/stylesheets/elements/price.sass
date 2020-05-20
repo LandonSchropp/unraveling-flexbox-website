@@ -1,0 +1,37 @@
+.price
+  text-align: center
+  font-size: 3.3333333333rem
+  font-weight: 400
+  line-height: $spacing * 2
+  margin-bottom: $spacing
+  position: relative
+
+  &.discount
+    font-family: 'Permanent Marker', cursive
+    color: $portage
+    margin-bottom: $spacing / 2
+    background: none
+
+  .price.discount + &::after
+    display: block
+    content: ""
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+
+    background-image: image-url("slash.svg")
+    background-position: 50%
+    background-repeat: no-repeat
+
+    @include tablet
+      background-size: 160px 64px
+
+  b
+    font-size: 1.6666666666rem
+    font-weight: 600
+    vertical-align: super
+
+    // HACK: This is a hack to center the price despite the dollar sign.
+    margin-left: -0.5em

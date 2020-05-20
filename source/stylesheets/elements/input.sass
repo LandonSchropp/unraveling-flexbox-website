@@ -1,0 +1,28 @@
+input
+  outline: none
+
+  display: block
+  width: 100%
+  margin: $spacing 0
+  padding: $spacing / 4 $spacing * 0.375
+
+  color: $fjord
+  font-weight: 400
+  font-size: 0.9rem
+  line-height: $spacing
+
+  border: 1px solid $gull-gray
+  border-radius: $spacing / 8
+  -webkit-appearance: none
+
+  &::placeholder
+    font-weight: 300
+    color: $gull-gray
+    line-height: $spacing
+
+  &[type="number"]
+    -moz-appearance: textfield
+
+    &::-webkit-inner-spin-button, &::-webkit-outer-spin-button
+      -webkit-appearance: none
+      margin: 0

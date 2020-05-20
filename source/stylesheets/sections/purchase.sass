@@ -1,0 +1,31 @@
+#purchase
+
+  h3
+    text-align: center
+    margin-bottom: 0
+
+  +mobile-only
+    aside
+      padding-left: $spacing / 2
+      padding-right: $spacing / 2
+
+      .check-list
+        display: none
+
+  +tablet
+
+    h1
+      margin-bottom: $spacing * 2
+
+    .content
+      display: flex
+      align-items: flex-start
+
+      form, aside
+        flex: 1 1 0px
+
+      form
+        margin-left: $spacing / 2
+
+      aside
+        margin-right: $spacing / 2

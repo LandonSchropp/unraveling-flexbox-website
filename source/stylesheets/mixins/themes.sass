@@ -1,0 +1,28 @@
+@mixin white-theme
+  background-color: $white
+
+  &, h1, h2, h3, strong
+    color: $fjord
+
+@mixin portage-theme
+  background-color: $portage
+  color: $transparent-white
+
+  h1, h2, h3, strong
+    color: $white
+
+  button, .button
+    background-color: $fjord
+
+@mixin fjord-theme
+  color: $transparent-white
+  background-color: $fjord
+
+  h1, h2, h3, strong
+    color: $white
+
+@mixin g-play-theme
+  @include fjord-theme
+
+  background-image: image-url("gplaypattern.png")
+  background-size: 188px 178px

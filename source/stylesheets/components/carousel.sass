@@ -1,0 +1,35 @@
+.carousel
+  position: relative
+
+  & > button
+    flex: 0 0 auto
+    padding: $spacing / 2
+
+    position: absolute
+    top: 0
+    bottom: 0
+    z-index: 100
+
+    // BUG FIX: This is a fix to ensure Safari correctly renders transparent gradients. Safari
+    // doesn't work with the transparent keyword.
+    $transparent: rgba(255, 255, 255, 0)
+
+    &:first-of-type
+      background: linear-gradient(to right, white, white 75%, $transparent 100%, $transparent)
+
+    &:last-of-type
+      right: 0
+      background: linear-gradient(to left, white, white 75%, $transparent 100%, $transparent)
+
+    +tablet
+      padding: $spacing
+
+    img
+      width: $spacing / 2
+      opacity: 0.6
+
+  blockquote
+    padding: 0 $spacing * 2
+
+    +tablet
+      padding: 0 $spacing * 3
