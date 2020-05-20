@@ -6,7 +6,9 @@
   "license": "UNLICENSED",
   "private": true,
   "dependencies": {
-    "parcel": "^2.0.0-alpha.3.2"
+    "parcel": "^2.0.0-alpha.3.2",
+    "posthtml-extend": "^0.3.0",
+    "posthtml-include": "^1.4.3"
   },
   "scripts": {
     "serve": "parcel serve source/index.html"
