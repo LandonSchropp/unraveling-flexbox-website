@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="16px" height="32px" viewBox="0 0 16 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.2 (15855) - http://www.bohemiancoding.com/sketch -->
+    <title>right_arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="right_arrow" sketch:type="MSArtboardGroup" stroke="#9BA7B9" stroke-width="3" stroke-linecap="round">
+            <path d="M14.5,1.5 L1.5,16" id="Line" sketch:type="MSShapeGroup" transform="translate(8.000000, 8.750000) scale(-1, 1) translate(-8.000000, -8.750000) "></path>
+            <path d="M14.5,30.4772949 L1.5,15.9697266" id="Line-Copy" sketch:type="MSShapeGroup" transform="translate(8.000000, 23.223511) scale(-1, 1) translate(-8.000000, -23.223511) "></path>
+        </g>
+    </g>
+</svg>
