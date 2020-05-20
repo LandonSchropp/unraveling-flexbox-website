@@ -4,5 +4,8 @@
   "repository": "https://github.com/LandonSchropp/unraveling-flexbox-website",
   "author": "Landon Schropp <schroppl@gmail.com> (https://landonschropp.com)",
   "license": "UNLICENSED",
-  "private": true
+  "private": true,
+  "dependencies": {
+    "parcel": "^2.0.0-alpha.3.2"
+  }
 }
