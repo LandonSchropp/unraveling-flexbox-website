@@ -6,11 +6,15 @@
   "license": "UNLICENSED",
   "private": true,
   "dependencies": {
-    "parcel": "^2.0.0-alpha.3.2",
-    "posthtml-extend": "^0.3.0",
-    "posthtml-include": "^1.4.3"
+    "nunjucks": "^3.2.1",
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-nunjucks": "^2.2.0"
   },
   "scripts": {
-    "serve": "parcel serve source/index.html"
+    "serve": "parcel serve --no-cache --out-dir build source/index.njk"
+  },
+  "devDependencies": {
+    "posthtml-extend": "^0.3.0",
+    "posthtml-include": "^1.4.3"
   }
 }
