@@ -1,0 +1,8 @@
+{
+  "name": "unraveling-flexbox-website",
+  "description": "The website for my Unraveling Flexbox book",
+  "repository": "https://github.com/LandonSchropp/unraveling-flexbox-website",
+  "author": "Landon Schropp <schroppl@gmail.com> (https://landonschropp.com)",
+  "license": "UNLICENSED",
+  "private": true
+}
