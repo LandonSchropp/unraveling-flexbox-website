@@ -11,10 +11,13 @@
     "parcel-plugin-nunjucks": "^2.2.0"
   },
   "scripts": {
-    "serve": "parcel serve --no-cache --out-dir build source/index.njk"
+    "serve": "parcel serve --no-cache --out-dir build source/index.njk",
+    "build": "parcel build --no-cache --out-dir build source/index.njk",
+    "deploy": "yarn build && gh-pages -d build"
   },
   "devDependencies": {
     "coffeescript": "^2.5.1",
+    "gh-pages": "^2.2.0",
     "posthtml-extend": "^0.3.0",
     "posthtml-include": "^1.4.3",
     "sass": "^1.26.5"
